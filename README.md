@@ -6,7 +6,7 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 
 ### Development
 - Cursor in agent mode
-- PyCharm for some of the sticker Docker work
+- PyCharm for some of the stickier Docker work
 
 ### Frontend
 - React with TypeScript
@@ -43,7 +43,7 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 
 #### Frontend
 - I just used the default React state management as the app is small
-- Just used simple AI generated CSS as I did not wish to fuss with a design library
+- Just used simple AI-generated CSS as I did not wish to fuss with a design library
 - Did some performance optimizations with memoization. 
 - Implemented the sorting and filtering on the frontend to reduce API calls to the backend. Opinions differ on this. I think it is reasonable for a simple Todo app as the number of items would never be excessively large and I would rather outsource the CPU cycles to be paid by the user and keep my API requests within the free tier as much as possible.
 
@@ -53,14 +53,14 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 - The project structure is well-organized with clear separation of concerns, featuring a modular design that separates routes, models, repositories, and middleware. 
 - The API design adheres to RESTful principles with proper HTTP method usage and consistent response formats. 
 - The database integration is solid, using SQLAlchemy ORM with proper model definitions. 
-- The architecture is extreme overkill for this trivial app, particularly the respository and service layers, but for anything more complex there would be benefit to having it. I want you to know that I know, so a lot of overengineering has been done for this app. 
+- The architecture is extreme overkill for this trivial app, particularly the repository and service layers, but for anything more complex there would be benefit to having it. I want you to know that I know, so a lot of overengineering has been done for this app. 
 
 
 ### Things I deliberately left out for lack of time
 - This is dockerized, but it is not production ready. It just serves it on the vite server for example. There is no production setup. Dockerization is simply so you can run it in one step. 
 - I hardcoded variables in the Docker files rather than having you fumble with an env file.
 - Skipped on most security. There is no authentication.  Wildcard for the CORS values. No rate limiting on the API. 
-- No logging, no Sentry, no user analytics, no API versioning, no linting, etc. Well, I don't expect to be doing much work on this later on, so those quality of life additions are not required. 
+- No real use of the logging, no Sentry, no user analytics, no API versioning, no linting, etc. Well, I don't expect to be doing much work on this later on, so those quality of life additions are not required. 
 - Ran out of time for frontend tests and things like test coverage reporting and caching. 
 - Just used simple CSS that is AI generated. Didn't want to fuss with Material MUI too much with the time limit. 
 
