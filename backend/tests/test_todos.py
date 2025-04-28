@@ -3,12 +3,9 @@ from fastapi.testclient import TestClient
 from sqlalchemy.orm import Session
 from app.main import app
 from app.database import Base, engine, get_db
-from app.models import Todo
 from app.repositories.todo_repository import TodoRepository
 from app.services.todo_service import TodoService
-from datetime import datetime, date
 
-# Create test database
 Base.metadata.create_all(bind=engine)
 
 def get_test_db():

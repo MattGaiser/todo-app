@@ -1,5 +1,4 @@
 from typing import List, Optional
-from datetime import datetime
 from pydantic import ValidationError
 from app.repositories.todo_repository import TodoRepository
 from app.schemas import TodoCreate, TodoUpdate

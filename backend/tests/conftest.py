@@ -9,7 +9,6 @@ from app.database import Base, get_db
 from app.models import Todo
 from datetime import datetime, date
 
-# Create in-memory SQLite database for testing
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
