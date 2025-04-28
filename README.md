@@ -4,6 +4,10 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 
 ## Technologies Used
 
+### Development
+- Cursor in agent mode
+- PyCharm for some of the sticker Docker work
+
 ### Frontend
 - React with TypeScript
 - Vite for build tooling
@@ -70,7 +74,7 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/MattGaiser/todo-app.git
 cd todo-app
 ```
 
@@ -81,7 +85,7 @@ docker-compose up --build
 
 This will start:
 - Frontend on http://localhost:5173
-- Backend API on http://localhost:8000
+- Backend API on http://localhost:8001
 - PostgreSQL database on port 5432
 
 ### Development
@@ -107,8 +111,8 @@ This will:
 ## API Documentation
 
 Once the application is running, you can access the API documentation at:
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- Swagger UI: http://localhost:8001/docs
+- ReDoc: http://localhost:8001/redoc
 
 ## Project Structure
 
@@ -125,7 +129,6 @@ todo-app/
 │   │   ├── types.ts       # TypeScript type definitions
 │   │   └── main.tsx       # Application entry point
 │   ├── Dockerfile         # Frontend container configuration
-│   ├── Dockerfile.test    # Frontend test container configuration
 │   ├── package.json       # Frontend dependencies
 │   ├── vite.config.ts     # Vite configuration
 │   └── playwright.config.ts # Playwright test configuration

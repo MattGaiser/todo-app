@@ -1,7 +1,7 @@
 import axios, { AxiosError } from 'axios';
 import { Todo, TodoCreate, TodoUpdate } from './types';
 
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8001';
 
 export class ApiError extends Error {
   constructor(
