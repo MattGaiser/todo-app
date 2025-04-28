@@ -62,7 +62,13 @@ A full-stack todo application with a modern React frontend and FastAPI backend, 
 - Skipped on most security. There is no authentication.  Wildcard for the CORS values. No rate limiting on the API. 
 - No real use of the logging, no Sentry, no user analytics, no API versioning, no linting, etc. Well, I don't expect to be doing much work on this later on, so those quality of life additions are not required. 
 - Ran out of time for frontend tests and things like test coverage reporting and caching. 
-- Just used simple CSS that is AI generated. Didn't want to fuss with Material MUI too much with the time limit. 
+- Just used simple CSS that is AI generated. Didn't want to fuss with Material MUI too much with the time limit.
+
+### Backend Testing Strategy
+- Uses SQLite in-memory database with pytest fixtures to ensure complete test isolation and clean state between tests
+- Implements comprehensive test coverage across all layers (API endpoints, CRUD operations, models, and business logic) in separate test files
+- Leverages FastAPI's TestClient for HTTP endpoint testing, validating both successful operations and error cases
+- Uses Docker containerization for testing with a separate docker-compose.test.yml configuration
 
 ## Getting Started
 
